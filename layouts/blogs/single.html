@@ -14,7 +14,7 @@
     <!-- BLOG HEADER -->
     <header class="blog-header reveal">
       <div class="blog-breadcrumb">
-        <a href="/blogs/">Blogs</a> <span>/</span> {{ .Title }}
+        <a href="{{ "/blogs/" | absURL }}">Blogs</a> <span>/</span> {{ .Title }}
       </div>
 
       <h1 class="blog-title">{{ .Title }}</h1>

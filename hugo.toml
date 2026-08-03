@@ -1,4 +1,5 @@
 baseURL = "https://faaaizan.space/"
+canonifyURLs = true
 locale = "en"
 title = "Faizan Nadeem — Backend & AI Developer"
 

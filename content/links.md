@@ -1,5 +1,6 @@
 ---
 title: "Links"
+date: 2026-08-03
 type: "links"
 displayName: "Muhammad Faizan"
 avatar: "/assets/me.jpeg"
