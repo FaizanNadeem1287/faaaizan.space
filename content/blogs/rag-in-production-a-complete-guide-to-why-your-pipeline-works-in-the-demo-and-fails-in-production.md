@@ -11,8 +11,6 @@ imageCreditURL: "https://unsplash.com/photos/a-computer-circuit-board-with-a-bra
 css: "/styles/blog.css"
 ---
 
-## What's Inside
-
 The demo always works. You embed a few dozen documents, ask a question, and the model answers it correctly, instantly, with a clean citation. You show it to your team. Everyone's impressed. Then you point it at the real document set, a few thousand pages instead of a few dozen, and put it in front of real users, and it falls apart. Answers get vague. Latency creeps past three seconds. The model confidently cites the wrong section. Someone asks a question with an exact product code in it and the system returns five chunks that are all thematically related and completely useless.
 
 Most developers treat RAG as a single check: "did we add a vector database?" That's the mistake. A vector database is one component in a pipeline, not the pipeline itself. The gap between a working demo and a production system isn't a smarter model or a better prompt, it's almost always the retrieval layer underneath it, and specifically three things most tutorials skip: how you chunk your documents, how you search across them, and how you avoid doing the expensive work twice. Fix those three and everything downstream gets easier.

@@ -11,8 +11,6 @@ imageCreditURL: "https://unsplash.com/@emilep"
 css: "/styles/blog.css"
 ---
 
-## Hook
-
 Most Python projects don't have one code-quality tool — they have five. Flake8 for style, Black for formatting, isort for imports, pyupgrade for modern syntax, autoflake for dead code, and usually a pre-commit config stitching all of it together so nobody forgets to run any of it before pushing. Each tool is fine on its own. Running all of them, on every save, on every commit, on every CI run, on a codebase of any real size, is where the friction actually lives.
 
 Most developers treat this as "just the cost of doing Python properly" and never question it. The real fix isn't a faster version of any one of those tools — it's replacing the whole stack with something that does all of their jobs at once, at a speed that makes "run it on every save" a non-issue instead of a compromise. That's what Ruff is. It's a single, Rust-based linter and formatter that covers most of what that five-tool stack was doing, at something like 10 to 100 times the speed, with one configuration file instead of five.

@@ -11,8 +11,6 @@ imageCreditURL: "https://unsplash.com/@googledeepmind"
 css: "/styles/blog.css"
 ---
 
-## What's Inside
-
 Most MCP content is theoretical — diagrams of a client talking to a server, an analogy to USB-C, a five-line "hello world" that runs on localhost and never leaves your laptop. None of that prepares you for the actual work: taking a tool you built locally and putting it on a real server, behind a real reverse proxy, reachable by a real client over the public internet. That's a different problem, and it's the one nobody writes about.
 
 I deployed one. A local MCP server, moved to an EC2 instance, served over the streamable HTTP transport with bearer-token auth in front of it via nginx. It worked. And then, almost as soon as I'd settled on that setup, the protocol itself changed underneath it — the MCP specification's biggest revision since launch went from release candidate to final on July 28, 2026, and it rewrites the core of the protocol to be stateless. Most people treat "add MCP support" as a single check on a list. It isn't. It's a transport decision, an auth decision, and now — with this spec update — a scaling decision, and getting any one of them wrong is the difference between a tool that works in a demo and one you can actually trust in production.
