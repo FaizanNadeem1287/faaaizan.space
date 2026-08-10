@@ -11,8 +11,6 @@ imageCreditURL: "https://unsplash.com/@berkeleycommunications"
 css: "/styles/blog.css"
 ---
 
-## Hook
-
 The first time you open Twilio's console to wire up voice or SMS for a real product, the terminology hits you all at once — SIP trunk, DID, CNAM, 10DLC, STIR/SHAKEN, LNP — and most of it sounds like it belongs in a networking exam, not a backend integration. The common mistake is treating this as vocabulary to memorize once and move past. It isn't. Telephony has its own physical and regulatory reality underneath the API — a real PSTN network, real carriers, and real compliance frameworks that will silently block your traffic if you don't understand them, no matter how correct your code is.
 
 This post covers the full map: what each term actually means, how the pieces connect into one real call or message flow, and — because this is the part most terminology guides skip entirely — what changed in A2P 10DLC compliance in 2026, since a setup that worked fine in 2024 can get your messages blocked outright today.
