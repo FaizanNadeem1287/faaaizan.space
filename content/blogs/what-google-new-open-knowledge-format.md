@@ -6,12 +6,10 @@ author: "Faizan Nadeem"
 tags: ["AI Engineering", "RAG", "Backend Development", "LLM"]
 image: "images/blogs/okf-codebase-knowledge-graph.jpg"
 imageAlt: "Interconnected markdown files representing a codebase knowledge graph"
-imageCredit: "Photo by [Name] on Unsplash"
-imageCreditURL: "https://unsplash.com/@[handle]"
+imageCredit: "Photo by Shutter Speed on Unsplash"
+imageCreditURL: "https://unsplash.com/@shutter_speed_"
 css: "/styles/blog.css"
 ---
-
-## Hook
 
 Point a coding agent at a real repository and watch what actually happens before it writes a single line: it reads files, greps for callers, opens a handful of related modules, and rebuilds — from scratch, every single task — a mental model of how your codebase fits together. That work isn't free. It's tokens, and on a repo of any real size, it's a lot of them, spent re-deriving the same structural facts your team already knows and could have written down once.
 
