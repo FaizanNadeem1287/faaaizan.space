@@ -1,7 +1,7 @@
 ---
 title: "Open Knowledge Format (OKF): A Complete Guide to Building a Self-Updating Codebase Knowledge Graph"
 description: "What Google's new Open Knowledge Format actually standardizes, how it maps onto a real codebase instead of BigQuery tables, and how to build the enrichment pipeline that keeps it accurate as code changes."
-date: 2026-08-10
+date: 2026-08-12
 author: "Faizan Nadeem"
 tags: ["AI Engineering", "RAG", "Backend Development", "LLM"]
 image: "images/blogs/okf-codebase-knowledge-graph.jpg"
