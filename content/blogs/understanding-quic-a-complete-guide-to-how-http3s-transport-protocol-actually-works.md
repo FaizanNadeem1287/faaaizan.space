@@ -1,7 +1,7 @@
 ---
 title: "Understanding QUIC: A Complete Guide to How HTTP/3's Transport Protocol Actually Works"
 description: "How QUIC actually works underneath HTTP/3 — streams, the built-in TLS 1.3 handshake, 0-RTT, connection migration, and multipath QUIC — and why crossing a third of global web traffic in 2026 means it's no longer optional to understand."
-date: 2026-08-10
+date: 2026-08-14
 author: "Faizan Nadeem"
 tags: ["Networking", "Backend Development", "System Design"]
 image: "images/blogs/quic-http3-guide.jpg"
@@ -10,8 +10,6 @@ imageCredit: "Photo by Compare Fibre on Unsplash"
 imageCreditURL: "https://unsplash.com/@comparefibre"
 css: "/styles/blog.css"
 ---
-
-## Hook
 
 Most backend developers can still sketch TCP's three-way handshake from memory, but ask about QUIC and the conversation stalls out at "isn't that a browser thing?" That's the common mistake — treating QUIC as an implementation detail of HTTP/3 rather than what it actually is: a full transport protocol replacing TCP itself, with its own reliability, its own encryption, and its own rules for how data moves across a network.
 
