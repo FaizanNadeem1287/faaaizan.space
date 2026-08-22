@@ -11,8 +11,6 @@ imageCreditURL: "https://unsplash.com/@claybanks"
 css: "/styles/blog.css"
 ---
 
-## Hook
-
 You quit Claude Code mid-task after four hours of back-and-forth — architecture decisions made, three approaches tried and abandoned, one open question unresolved. An hour later you open Codex in the same directory to try something it's better at. Codex knows none of it. You re-explain the architecture, the failed approaches, and the open question, because that context lived in one tool's transcript and nowhere else. Multiply that by however many agent CLIs you actually use in a given week — and in 2026, with Claude Code, Codex, Cursor, Antigravity, Grok Build, Kimi Code, and a dozen others all viable at once, that number is rarely one.
 
 The common mistake in how "AI agent memory" gets solved is reaching straight for a vector database and calling it done. `ai-memory`, an open-source Rust project from Fabio Akita, takes a deliberately different position: compile a coherent summary at the end of a session instead of retrieving fragments from raw logs at the start of the next one, store it as plain markdown in a git repo instead of embeddings in a vector store, and treat "which agent vendor you're using right now" as irrelevant to whether your memory follows you. This post walks through how that's actually built.
